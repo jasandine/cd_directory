@@ -5,6 +5,7 @@ require('./lib/cd')
 
 get('/') do
   @cds = Cd.all()
+  @found_cds = []
   erb(:index)
 end
 
