@@ -27,6 +27,10 @@ class Cd
     @@cds
   end
 
+  # define_method(:all_artists) do |artist|
+  #   @artist.push(self)
+  # end
+
   define_singleton_method(:find) do |identification|
     found_cds = []
     @@cds.each() do |cd|

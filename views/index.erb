@@ -26,10 +26,8 @@
 </form>
 
 <ul>
-  <% if @found_cd == nil %>
-
-      <% else %>
-        <li> <%= @found_cd.artist() %> </li>
-        <li> <%= @found_cd.album() %> </li>
-        <% end %>
-      </ul>
+  <% @found_cds.each() do |cd| %>
+    <li> <%= cd.artist() %> </li>
+    <li> <%= cd.album() %> </li>
+  <% end %>
+</ul>

@@ -1,6 +1,7 @@
 require('rspec')
 require('cd')
 
+
 describe(Cd) do
   before() do
     Cd.clear()
@@ -38,6 +39,16 @@ end
     end
   end
 
+  # describe('#all_artists') do
+  #   it("adds a new artist to the directory") do
+  #     test_cd1 = Cd.new({ :artist => "pink floyd", :album => "animals" })
+  #     test_cd1.save()
+  #     test_cd2 = Cd.new({ :artist => "johnny cash", :album => "the man in black" })
+  #     test_cd2.save()
+  #     expect(Cd.all_artists()).to(eq([test_cd1, test_cd2]))
+  #   end
+  # end
+
   describe(".find") do
     it("returns a CD by the artist name") do
       test_cd1 = Cd.new({ :artist => "pink floyd", :album => "animals" })
@@ -45,6 +56,13 @@ end
       test_cd2 = Cd.new({ :artist => "johnny cash", :album => "the man in black" })
       test_cd2.save()
       expect(Cd.find("pink floyd")).to(eq([test_cd1]))
+    end
+  end
+
+  # describe(".show_all_artists") do
+  #   it("returns a list of all artists you have CD's for") do
+  #
+
     end
   end
 end

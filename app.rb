@@ -18,14 +18,8 @@ post('/cd_info') do
 end
 
 post('/search') do
-  @cds = CD.all()
-  @found_cd = nil
+  @cds = Cd.all()
   search_cd = params.fetch('search')
-  @cds.each() do |cd|
-    if cd.artist() == search_cd
-      @found_cd = cd
-    end
-    @found_cd
-  end
+  @found_cds = Cd.find(search_cd)
   erb(:index)
 end
