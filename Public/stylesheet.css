@@ -1,0 +1,31 @@
+body{
+  background: #8499B1;
+}
+
+.container{
+  height: 500px;
+  width: 450px;
+  background: #A5C4D4;
+  margin-top: 10%;
+  margin-left: 25%;
+
+}
+
+.header{
+  color: #493B2A;
+  /*font-style: italic;*/
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.info_input{
+  margin-left: 15%;
+}
+
+p{
+  display: none;
+}
+
+form {
+  margin-left: 15%;
+}

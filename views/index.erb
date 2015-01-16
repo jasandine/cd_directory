@@ -1,18 +1,23 @@
+<div class="container">
+<div class="header">
 <h1>Make a CD Collection!</h2>
 
   <h2>Enter an artist and album:</h2>
+</div>
 
+<div class="info_input">
 <form action="/cd_info" method="post">
 
   <label for="artist1">Artist:</label>
   <input id="artist1" name="artist1" type="text">
-
+<br>
+<br>
   <label for="album1">Album:</label>
   <input id="album1" name="album1" type="text">
-
-  <button type="submit">GO</button>
+<br>
+<button type="submit">GO</button>
 </form>
-
+</div>
 <p>
   <% @cds.each() do |cd| %>
     <%= cd.artist() %>
@@ -22,7 +27,7 @@
 <form action="/search" method="post">
   <label for="search">Search a term</label>
   <input id="search" name="search" type="text">
-  <button type="submit">Search!</button>
+  <button type="submit2">Search!</button>
 </form>
 
 <ul>
@@ -31,3 +36,4 @@
     <li> <%= cd.album() %> </li>
   <% end %>
 </ul>
+</div>

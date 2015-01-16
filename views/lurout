@@ -1,0 +1,47 @@
+body {
+  background-color: #006151;
+
+}
+
+.container {
+  background-color: #18B197;
+  margin-top: 15%;
+  width: 400px;
+  height: 350px;
+  margin-left: 0 auto;
+  padding: 15px;
+  border: solid #007B66;
+  border-radius: 10px;
+
+}
+
+.list {
+  overflow-y: scroll;
+  max-height: 190px;
+
+}
+
+h1 {
+  color: #006151;
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style-image: url('img/pinpoint.png');
+  margin-left: 50px;
+
+}
+
+.form-group {
+  margin-left: 15px;
+}
+
+.resetbtn {
+  margin-left: 140px;
+
+}
